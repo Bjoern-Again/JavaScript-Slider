@@ -1,0 +1,63 @@
+
+* {box-sizing:border-box}
+
+.slideShow{
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+img{
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.previousBtn, .nextBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -22px;
+  padding: 50px 16px 50px 16px;
+  color: rgb(250, 242, 242);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* position of next button*/
+.nextBtn {
+  right: 0;
+}
+
+/* On hover, add a black transparent background */
+.previousBtn:hover, .nextBtn:hover {
+  background-color: rgba(7, 7, 7, 0.2);
+}
+
+
+#dots {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: rgb(250, 226, 10);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #1714e7;
+}
